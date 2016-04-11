@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView android:id="@+id/cityName"
+            android:text="CityName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"  />
+        <EditText android:id="@+id/txtCity"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Please enter city"/>
+        <TextView android:id="@+id/longitude"
+            android:text="Longitude"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+        <EditText android:id="@+id/txtLongitude"
+            android:hint="Please enter longitude"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:digits="0123456789-."/>
+        <TextView android:id="@+id/latitude"
+            android:text="Latitude"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"/>
+        <EditText android:id="@+id/txtLatitude"
+            android:hint="Please enter latitude"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:digits="0123456789-."/>
+        <TextView android:id="@+id/lblTimeZone"
+            android:text="TimeZone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+        <EditText android:id="@+id/txtTimeZone"
+            android:hint="Please enter timeZone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+        <Button android:id="@+id/btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_gravity="fill_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:textSize="22sp"
+            android:textColor="@android:color/white"
+            android:text="Add Details" />
+    </LinearLayout>
+</ScrollView><!-- From: file:/F:/swinburne/semester4/SoftwareDevforMobileDevice/Assignments/Assignment8/SunCalculator/app/src/main/res/layout/form.xml -->

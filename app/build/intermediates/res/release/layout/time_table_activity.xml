@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    >
+   <TextView android:id="@+id/lbl_city"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center"
+       />
+   
+   <ScrollView android:id="@+id/l1"
+       android:layout_width="match_parent" 
+	android:layout_height="wrap_content" >
+   <LinearLayout 
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:background="@drawable/btn_white">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="Start Date:"
+        android:textColor="@android:color/black"
+        android:background="@drawable/btn_lightblue"  />    
+        <DatePicker android:id="@+id/dp1" android:layout_width="wrap_content" android:layout_height="wrap_content"
+          android:background="@drawable/btn_lightblue"  />
+        
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="End Date:"
+        android:textColor="@android:color/black"
+        android:background="@drawable/btn_lightgreen"/>
+        <DatePicker android:id="@+id/dp2" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:background="@drawable/btn_lightgreen"/>
+   
+    <Button android:id="@+id/btn_showTbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="show time"
+        />
+    </LinearLayout>
+    </ScrollView>
+    <Button 
+        android:id="@+id/btn_showL1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="change time"
+        android:visibility="invisible"
+        />
+    <TableRow android:id="@+id/row_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_marron"
+        android:visibility="invisible">
+        <TextView android:id="@+id/lbl_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:background="@drawable/bnt_lightyellow"
+            android:textColor="@android:color/white"
+            android:text="Date    ~~~   Sunrise   ~~~  Sunset"/>
+       
+    </TableRow>
+    <ScrollView 
+        android:id="@+id/scrl_1"
+        android:layout_width="wrap_content" 
+	android:layout_height="wrap_content"
+	 android:visibility="invisible">
+    
+	<TableLayout
+	    android:id="@+id/tblTime"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    
+	    android:stretchColumns="0,1" >
+	
+	</TableLayout>
+	</ScrollView>
+</LinearLayout><!-- From: file:/F:/swinburne/semester4/SoftwareDevforMobileDevice/Assignments/Assignment8/SunCalculator/app/src/main/res/layout/time_table_activity.xml -->

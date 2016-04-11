@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/entry_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="vertical"
+    android:orientation="vertical">
+ 
+    <TextView
+        android:id="@+id/txtLocName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Name: "
+         />
+ 
+    <EditText
+        android:id="@+id/edtLocName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         >
+ 
+        <requestFocus />
+ 
+    </EditText>
+ 
+    <TextView
+        android:id="@+id/txtLocLat"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Latitude : "
+         />
+ 
+    <EditText
+        android:id="@+id/edtLocLat"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         >
+    </EditText>
+ 
+    <TextView
+        android:id="@+id/txtLocLng"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Longitude : "
+         />
+ 
+    <EditText
+        android:id="@+id/edtLocLng"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+    
+    <TextView
+        android:id="@+id/txtTz"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="TimeZone Offset : "
+         />
+ 
+    <EditText
+        android:id="@+id/edtTz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+ 
+    <Button
+        android:id="@+id/btn_data_enter"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Save" />
+ 
+</LinearLayout>
+<!-- From: file:/F:/swinburne/semester4/SoftwareDevforMobileDevice/Assignments/Assignment8/SunCalculator/app/src/main/res/layout/entry_activity.xml -->

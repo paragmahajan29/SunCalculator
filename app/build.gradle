@@ -1,0 +1,27 @@
+apply plugin: 'com.android.application'
+android {
+    signingConfigs {
+        config {
+        }
+    }
+    compileSdkVersion 20
+    buildToolsVersion '20.0.0'
+    defaultConfig {
+        applicationId 'swindroid.suntime'
+        minSdkVersion 15
+        targetSdkVersion 20
+        signingConfig signingConfigs.config
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    compile 'com.android.support:appcompat-v7:20.+'
+    compile 'com.google.android.gms:play-services:6.1.+'
+}

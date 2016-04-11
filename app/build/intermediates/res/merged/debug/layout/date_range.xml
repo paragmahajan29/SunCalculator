@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Location:" />
+
+    <Spinner
+        android:id="@+id/locationTV"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10sp"
+        android:text="Start Date:" />
+
+    <DatePicker
+        android:id="@+id/startDatePicker"
+        android:layout_width="fill_parent"
+        android:layout_height="150sp"
+        android:gravity="center"
+        android:calendarViewShown="false"
+        android:spinnersShown="true">
+    </DatePicker>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:height="30sp"
+        android:padding="3sp"
+        android:text="End Date:" />
+
+    <DatePicker
+        android:id="@+id/endDatePicker"
+        android:layout_width="fill_parent"
+        android:layout_height="150sp"
+        android:gravity="center"
+        android:calendarViewShown="false"
+        android:spinnersShown="true">
+    </DatePicker>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Generate SunTime" />
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/times"></TableLayout>
+  </LinearLayout>
+</ScrollView>
+
+<!-- From: file:/D:/Parag/University/Android/Assign8/SunCalculator_TableWorkingCode/app/src/main/res/layout/date_range.xml -->

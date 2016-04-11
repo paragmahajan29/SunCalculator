@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" 
+	android:layout_height="wrap_content">
+<LinearLayout 
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+
+<TextView android:text="Melbourne, AU" android:id="@+id/locationTV"
+android:textSize="36sp" 
+android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+
+<TableLayout android:id="@+id/TableLayout01" android:layout_width="fill_parent" android:layout_height="wrap_content" 
+android:stretchColumns="0,1" android:gravity="center" android:padding="5sp">
+<TableRow android:id="@+id/TableRow01" android:layout_width="match_parent" android:layout_height="wrap_content">
+	<TextView android:padding="2sp" android:gravity="center" android:textColor="#ffd700"
+android:textSize="24sp" android:text="Sun Rise" android:layout_height="wrap_content" android:layout_width="wrap_content"></TextView>
+	<TextView android:padding="2sp" android:gravity="center" android:textColor="#ff8400" 
+android:textSize="24sp" android:text="Sun Set" android:layout_height="wrap_content" android:layout_width="wrap_content"></TextView>
+</TableRow>
+
+<TableRow android:id="@+id/TableRow02" android:layout_width="match_parent" android:layout_height="wrap_content">
+	<TextView android:padding="2sp" android:textSize="48sp" android:text="00:00" android:textColor="#ffd700" android:gravity="center" android:layout_height="wrap_content" android:id="@+id/sunriseTimeTV" android:layout_width="wrap_content"></TextView>
+	<TextView android:padding="2sp" android:textSize="48sp" android:text="00:00" android:textColor="#ff8400" android:gravity="center" android:layout_height="wrap_content" android:id="@+id/sunsetTimeTV" android:layout_width="wrap_content"></TextView>
+</TableRow>
+</TableLayout>
+
+
+
+
+   <LinearLayout android:background="@drawable/sunpic"
+       android:layout_width="match_parent" android:layout_height="match_parent"
+       android:orientation="vertical">
+	<TableLayout android:id="@+id/table2" android:layout_width="wrap_content" android:layout_height="wrap_content" 
+android:stretchColumns="0,1" android:gravity="center" android:padding="0sp" android:background="@drawable/btn_white">
+	    <TableRow android:id="@+id/tbl2_TableRow01" android:layout_width="wrap_content" android:padding="0sp" android:layout_height="wrap_content">
+	        <Spinner
+	 android:id="@+id/spinner1"
+	 android:layout_width="wrap_content"
+	 android:layout_height="match_parent"
+	 android:dropDownWidth="wrap_content"
+	 
+	 style="@style/ButtonTextBlackLight"
+	 />
+	 
+	    </TableRow>
+	    <TableRow android:id="@+id/tbl2_TableRow02" android:layout_width="wrap_content"  android:layout_height="wrap_content"
+	        android:background="@drawable/bnt_lightyellow" >
+	       <DatePicker android:id="@+id/datePicker" android:layout_width="fill_parent"  android:gravity="center"
+	android:layout_height="wrap_content" >
+	</DatePicker>
+	       
+	   </TableRow>
+	   <TableRow android:id="@+id/tbl2_TableRow03" android:layout_width="wrap_content" android:layout_height="wrap_content"
+	        android:background="@drawable/btn_lightgreen" >
+	       <RelativeLayout android:layout_width="match_parent"
+	           android:layout_height="match_parent"
+	           android:layout_gravity="left"
+	           android:background="@drawable/btn_marron"
+	           >
+	           
+	       <Button
+        android:id="@+id/btn_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:text="Map"/>
+	       <Button
+	           android:layout_toRightOf="@id/btn_location"
+        android:id="@+id/btn_timeTabl"
+        
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       
+        android:text="Time Range"/>
+	       
+	       <!-- <Button
+	           android:layout_toRightOf="@id/btn_timeTabl"
+        android:id="@+id/btn_Sms"
+        
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       
+        android:text="Share"/>
+	       
+	       <Button
+	           android:layout_toRightOf="@id/btn_Sms"
+        android:id="@+id/btn_Email"
+        
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       
+        android:text="Share Email"/> -->
+	       
+	       <Button
+	           android:layout_toRightOf="@id/btn_timeTabl"
+        android:id="@+id/btn_share"
+        
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       
+        android:text="Share"/>
+	       
+	       <Button
+	           android:layout_toRightOf="@id/btn_share"
+        android:id="@+id/btn_create"
+        
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       
+        android:text="Enter"/>
+	       
+	    </RelativeLayout>
+	   </TableRow>
+	</TableLayout>
+	
+	
+	
+	</LinearLayout>
+	<TextView
+        android:id="@+id/tv_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+	
+	
+</LinearLayout>
+
+</ScrollView>
+
+<!-- From: file:/F:/swinburne/semester4/SoftwareDevforMobileDevice/Assignments/Assignment8/SunCalculator/app/src/main/res/layout/main.xml -->

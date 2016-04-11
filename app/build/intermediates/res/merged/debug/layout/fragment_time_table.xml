@@ -1,0 +1,18 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="swindroid.suntime.ui.TimeTableFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/tableList">
+
+    </TableLayout>
+
+</FrameLayout></ScrollView><!-- From: file:/D:/Parag/University/Android/Assign8/SunCalculator_TableWorkingCode/app/src/main/res/layout/fragment_time_table.xml -->

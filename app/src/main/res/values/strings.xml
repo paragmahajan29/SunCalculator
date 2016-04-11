@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Suntime</string>
+    <string name="action_settings">Settings</string>
+    <string name="add_location">Add Location</string>
+    <string name="change_location">Change Location</string>
+    <string name="favorites">Favorites</string>
+    <string name="watch_list">Watch List</string>
+    <string name="suntime">Sun Time</string>
+    <string name="update_postion">Update Position</string>
+    <string name="_id_locationtextview">\@+id/locationTextView</string>
+    <string name="unknown">Unknown</string>
+    <string name="get_suburb_name">Get Suburb Name</string>
+    <string name="get_location">Get Location</string>
+    <string name="melbourne_au">Melbourne, AU</string>
+    <string name="sun_rise">Sun Rise</string>
+    <string name="sun_set">Sun Set</string>
+    <string name="picture_of_sun">Picture of sun</string>
+    <string name="title_activity_date_range">Date Range</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
